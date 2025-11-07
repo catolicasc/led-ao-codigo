@@ -7,7 +7,7 @@
 
 ---
 
-## Aula 1 — Conhecendo o Arduino e o Primeiro Código
+## Aula 1. Conhecendo o Arduino e o Primeiro Código
 
 ### O que vamos aprender
 - O que é o Arduino e para que serve.  
@@ -36,7 +36,7 @@
 
 ---
 
-## Aula 2 — Lógica e Sensores: Fazendo o Arduino Pensar
+## Aula 2. Lógica e Sensores: Fazendo o Arduino Pensar
 
 ### O que vamos aprender
 - Usar **variáveis** e **condições** no código.  
@@ -65,7 +65,7 @@
 
 ---
 
-## Aula 3 — Criando um Mini Projeto com o Arduino
+## Aula 3. Criando um Mini Projeto com o Arduino
 
 ### O que vamos aprender
 - Juntar tudo o que aprendemos para criar um pequeno sistema.  
