@@ -1,95 +1,94 @@
 # Engenharia de Software — Do LED ao Código: Introdução ao Arduino
 
-## Visão Geral do Módulo
-**Tema central:** Do LED ao Código — Introdução ao Arduino  
-**Carga horária:** 3 encontros 3 horas cada)  
-**Objetivo geral:** Compreender a relação entre software e hardware, aplicando princípios de engenharia de software no desenvolvimento de pequenos projetos com Arduino.
+## Sobre o Módulo
+**Tema:** Do LED ao Código — Introdução ao Arduino  
+**Duração:** 3 aulas (3 horas cada)  
+**Objetivo:** Entender como o software controla o hardware, criando pequenos projetos com o Arduino.
 
 ---
 
-## Aula 1 — Fundamentos da Engenharia de Software e o Universo Arduino
+## Aula 1 — Conhecendo o Arduino e o Primeiro Código
 
-### Objetivos
-- Entender o papel da engenharia de software em sistemas embarcados.  
-- Conhecer o Arduino, sua estrutura e linguagem (C/C++ simplificado).  
-- Criar o primeiro programa (“Blink”) e compreender seu fluxo lógico.
+### O que vamos aprender
+- O que é o Arduino e para que serve.  
+- Como funciona um programa simples.  
+- Fazer o primeiro LED piscar.
 
-### Conteúdos
-1. O que é Engenharia de Software aplicada a hardware.  
-2. O ecossistema Arduino: IDE, placa, portas digitais e analógicas.  
-3. Estrutura básica de um código Arduino (`setup()` e `loop()`).  
-4. Exemplo prático: Piscar um LED (Blink)  
-   - Explicação dos pinos digitais.  
-   - Introdução a `digitalWrite()` e `delay()`.
+### Conteúdo
+1. O que é Engenharia de Software (de forma simples).  
+2. Partes do Arduino: placa, portas, IDE (programa onde escrevemos o código).  
+3. Estrutura básica do código (`setup()` e `loop()`).  
+4. Exemplo prático: LED piscando.  
+   - Como ligar o LED no pino certo.  
+   - Usando `digitalWrite()` e `delay()`.
 
 ### Materiais
-- Arduino Uno ou Nano  
-- Cabo USB  
+- Thinkercad
 - LED, resistor de 220Ω, protoboard e jumpers
 
 ### Atividade prática
 - Montar o circuito e fazer o LED piscar.  
-- Modificar o tempo do `delay` e observar o comportamento.  
+- Trocar o tempo do `delay` e observar o resultado.
 
 ### Discussão
-- O que é um “loop infinito”?  
-- Como o software controla o hardware?
+- O que significa o código ficar “rodando pra sempre”?  
+- Como o software faz o LED piscar?
 
 ---
 
-## Aula 2 — Lógica de Programação e Interação com Sensores
+## Aula 2 — Lógica e Sensores: Fazendo o Arduino Pensar
 
-### Objetivos
-- Aplicar estruturas de controle e variáveis no Arduino.  
-- Ler entradas digitais (botões, sensores simples).  
-- Criar uma lógica de decisão em código.
+### O que vamos aprender
+- Usar **variáveis** e **condições** no código.  
+- Ler informações de botões e sensores.  
+- Fazer um LED acender quando o botão for pressionado.
 
-### Conteúdos
-1. Variáveis, tipos e operadores.  
-2. Estruturas condicionais: `if`, `else`.  
-3. Leituras de entrada: `digitalRead()`.  
-4. Exemplo prático: Botão que acende LED  
-   - “Se o botão for pressionado, acender o LED.”  
-   - Discussão sobre *debounce* e lógica digital.
+### Conteúdo
+1. Variáveis e tipos básicos.  
+2. Condições: `if` e `else`.  
+3. Leitura de entradas com `digitalRead()`.  
+4. Exemplo prático: botão que acende o LED.  
+   - “Se apertar o botão → LED acende”.
 
 ### Materiais
-- Arduino  
-- Protoboard, LED, botão, resistores  
-- Jumpers
+- Thinkercad
+- LED, botão, resistores  
+- Protoboard e jumpers
 
 ### Atividade prática
-- Criar um “interruptor inteligente”: LED acende com um clique e apaga com outro.  
-- Implementar uma variável de estado (`bool ledOn`).
+- Criar um LED que acende com um clique e apaga com outro.  
+- Usar uma variável (`ledOn`) para guardar o estado.
 
-### Reflexão
-- Como o software lida com sinais elétricos?  
-- Qual seria o impacto de um erro lógico no hardware?
+### Discussão
+- Como o Arduino sabe que o botão foi apertado?  
+- O que acontece se o código tiver um erro?
 
 ---
 
-## Aula 3 — Pequenos Sistemas: Pensando como Engenheiro de Software
+## Aula 3 — Criando um Mini Projeto com o Arduino
 
-### Objetivos
-- Integrar conceitos de software e hardware em um mini sistema.  
-- Aplicar boas práticas de engenharia (clareza, modularização).  
-- Compreender o processo de documentação de projeto.
+### O que vamos aprender
+- Juntar tudo o que aprendemos para criar um pequeno sistema.  
+- Organizar o código e usar funções simples.  
+- Usar sensores analógicos, como o potenciômetro.
 
-### Conteúdos
-1. Funções e modularização no Arduino.  
-2. Introdução a sensores analógicos (LDR, potenciômetro).  
-3. Exemplo prático: Controle de brilho do LED com potenciômetro.  
-4. Discussão: padrões de projeto e reutilização de código.
+### Conteúdo
+1. Funções: dividir o código em partes menores.  
+2. Leitura de sensores analógicos com `analogRead()`.  
+3. Exemplo prático: controlar o brilho do LED com um potenciômetro.  
+4. Como pensar em um projeto completo.
 
 ### Materiais
 - Arduino  
-- Protoboard  
-- LED, resistores, potenciômetro  
-- Jumpers  
+- LED, potenciômetro, resistores  
+- Protoboard e jumpers
 
 ### Atividade prática
-- Ler o valor do potenciômetro (`analogRead()`), mapear (`map()`) e ajustar o brilho (`analogWrite()`).
+- Ler o valor do potenciômetro e controlar o brilho com `analogWrite()` e `map()`.
 
-### Atividade final
-- Em duplas, criar um mini projeto integrado:  
-  - Exemplos: “Semáforo inteligente”, “Luz ambiente automática”, “Sensor de presença”.  
-- Documentar: circuito, código e lógica.
+### Projeto final (em dupla)
+- Criar um mini projeto usando o que aprendeu.  
+  - Exemplos: **Semáforo inteligente**, **Luz automática**, **Sensor de presença**.  
+- Documentar o projeto: circuito, código e explicação.
+
+---
